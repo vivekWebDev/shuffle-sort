@@ -1,0 +1,158 @@
+* {
+    font-family: sans-serif;
+}
+
+.content{
+    width: 100%;
+    margin: 0;
+    max-width: 960px;
+}
+
+h3 {
+    margin: 0px;
+}
+
+header, footer {
+    text-align: center;
+    padding: 27px;
+}
+
+header {
+    padding-bottom: 1px;
+}
+footer {
+    background-color: #efefef;
+}
+
+main{
+    background-color: #efefef;
+    padding: 5px 0;
+    display: flex;
+    border-top: 3px solid gray;
+}
+
+.button-container {
+    width: 30%;
+    text-align: center;
+  }
+ 
+  button {
+    cursor: pointer;
+    background: #72c3dc;
+    border: 1px solid #2b8ead;
+    border-radius: 5px;
+    box-shadow: 0px 5px 0px #2b8ead;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 15px;
+    margin-top: 20px;
+    text-shadow: 1px #2b8ead;
+    max-width: 245px;
+    width: 100%;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    max-width: 68%;
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+ 
+  li {
+    list-style: none;
+    width: calc(100%/3);
+    padding: 40px 0;
+    font-size: 4vw;
+    color: #ffffff;
+  }
+
+[card-list='1'], [card-list='8'] {
+    background: #6f98a8;
+}
+
+[card-list='2'], [card-list='4'] {
+   background: #2b8ead;
+}
+
+[card-list='6'], [card-list='7'] {
+   background: #bfbfbf;
+}
+
+[card-list='3'], [card-list='5'], [card-list='9'] {
+    background: #2f454e;
+ }
+
+@media screen and (max-width: 375px) {
+    body{
+        margin: 0px;
+    }
+
+    header {
+      background: #333333;
+      color: #ffffff;
+      padding: 15px 0;
+    }
+ 
+    footer {
+        background: #ffffff;
+      }
+
+    main {
+      flex-direction: column-reverse;
+      background-color: #ffffff;
+    }
+
+    .button-container {
+        display: flex;
+        width: 100%;
+        margin: 15px 0 20px;
+        justify-content: space-around;
+      }
+   
+      button {
+        margin: 0;
+        max-width: 40%;
+        font-size: 14px;
+      }
+
+    ul {
+      flex-direction: column;
+      max-width: 90%;
+      margin: auto;
+      background: #ffffff;
+      padding: 0px;
+    }
+ 
+    li {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 5px;
+      color: #333333;
+      padding: 15px 0;
+    }
+ 
+    [card-list='1'], [card-list='8'] {
+      background-color: #efefef;
+      border-left: 5px solid #6f98a8;
+    }
+ 
+    [card-list='2'], [card-list='4'] {
+        background-color: #efefef;
+        border-left: 5px solid #2b8ead;
+
+    }
+ 
+    [card-list='6'], [card-list='7'] {
+        background-color: #efefef;
+        border-left: 5px solid #bfbfbf;
+
+    }
+
+    [card-list='3'], [card-list='5'], [card-list='9'] {
+        background-color: #efefef;
+        border-left: 5px solid #2f454e;
+
+    }
+  }
